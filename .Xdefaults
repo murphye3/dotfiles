@@ -1,0 +1,64 @@
+!  ██     ██      ██           ████                    ██   ██          
+! ░░██   ██      ░██          ░██░                    ░██  ░██          
+!  ░░██ ██       ░██  █████  ██████  ██████   ██   ██ ░██ ██████  ██████
+!   ░░███     ██████ ██░░░██░░░██░  ░░░░░░██ ░██  ░██ ░██░░░██░  ██░░░░ 
+!    ██░██   ██░░░██░███████  ░██    ███████ ░██  ░██ ░██  ░██  ░░█████ 
+!   ██ ░░██ ░██  ░██░██░░░░   ░██   ██░░░░██ ░██  ░██ ░██  ░██   ░░░░░██
+!  ██   ░░██░░██████░░██████  ░██  ░░████████░░██████ ███  ░░██  ██████ 
+! ░░     ░░  ░░░░░░  ░░░░░░   ░░    ░░░░░░░░  ░░░░░░ ░░░    ░░  ░░░░░░  
+!
+!
+! █▓▒░ fonts
+URxvt.font: xft:DejaVu Sans Mono for Powerline:size=11
+
+! █▓▒░ interface
+urxvt*scrollBar: false
+urxvt*transparent: false
+!urxvt*shading: 38
+!
+*.foreground:   #657b83
+*.background:   #002b36
+
+*.cursorColor:  #c2c2b0
+! black
+*.color0:       #073642
+*.color8:       #002b36
+! red
+*.color1:       #dc322f
+*.color9:       #cb4b16
+! green
+*.color2:       #859900
+*.color10:      #586e75
+! yellow
+*.color3:       #b58900
+*.color11:      #657b83
+! blue
+*.color4:       #268bd2
+*.color12:      #839496
+! magenta
+*.color5:       #d33682
+*.color13:      #6c71c4
+! cyan
+*.color6:       #2aa198
+*.color14:      #93a1a1
+! white
+*.color7:       #eee8d5
+*.color15:      #fdf6e3
+
+URxvt.colorIT:  #719611
+URxvt.colorBD:  #d3d3d3
+URxvt.colorUL:  #528b8b
+
+! █▓▒░ clipboard
+urxvt.perl-ext-common: default,clipboard,keyboard-select
+urxvt.keysym.M-Escape: perl:keyboard-select:activate
+urxvt.keysym.M-c:   perl:clipboard:copy
+urxvt.keysym.C-v:   perl:clipboard:paste
+urxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+urxvt.clipboard.copycmd:  xsel -ib
+urxvt.clipboard.pastecmd: xsel -ob
+
+! █▓▒░ misc
+urxvt.saveLines: 9999
+urxvt.iso14755: false
+!URxvt*altSendsEscape: true
