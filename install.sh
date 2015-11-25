@@ -10,8 +10,12 @@ echo copying .vimrc to home directory
 cp .vimrc ~/.vimrc
 echo ...done
 
+# clone the Vundle repo
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
 # Install the Vim Plugins using Vundle
 echo Vundle PluginInstall
+echo 2 Vim Errors are expected because we still need to download our plugins
 vim +PluginInstall +qall
 echo ...done
 
