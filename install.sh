@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#install defaults programs
+echo downloading git,vim,curl,zsh
+sudo apt-get install --yes git vim curl zsh
+echo downloading complete
+
 # copy .Xdefaults to home directory
 echo copying .Xdefaults to home directory
 cp .Xdefaults ~/.Xdefaults
@@ -23,4 +28,9 @@ echo ...done
 echo executing powerline font install
 cd ~/.vim/bundle/fonts/
 ./install.sh
+echo ...done
+
+# Install oh-my-zsh
+echo install oh-my-zsh
+curl sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 echo ...done
